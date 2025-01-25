@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Long-term Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .questionnaire {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .progress-table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .progress-table th,
+        .progress-table td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+        .progress-table th {
+            background-color: #f2f2f2;
+        }
+        .timer {
+            margin-top: 20px;
+        }
+        .info {
+            padding: 20px;
+            border: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .status-update {
+            padding: 20px;
+            border: 2px solid red;
+            margin-bottom: 20px;
+        }
+        #userID {
+            width: 285px; /* Breite */
+            height: 29px; /* Höhe */
+            font-size: 15px; /* Schriftgröße */
+        }
+        button {
+            width: 150px; /* Breite */
+            height: 35px; /* Höhe */
+            font-size: 15px; /* Schriftgröße */
+        }
+        #infoArea {
+            position: relative; /* Required to position children absolutely */
+        }
+        #toggleButton {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1; /* Ensure the button is above other content */
+        }
+        #clock {
+            font-size: 14px;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>
+            Long-term study on visualizing functionalities of highly automated vehicles
+            <span id="clock"></span>
+        </h2>
+        <h3><u>Don't forget to save this page link!</u></h3>
+        <h3><u>Important Information:</u></h3>
+        <strong>
+        <p>You will only get paid after completing all three days. Please continue only if you agree and understand the requirements.</p>
+        <p>If you don't agree or can't complete the study, please return it now.</p>
+        <p>If this is your first time here, set the survey status in Prolific to "awaiting review" by submitting with "no code."<br>
+            Your progress will be saved automatically on our server—just click the links here and at the end of each questionnaire.</p>
+        <p>Please follow the instructions on the bottom of this page.</p>
+        </strong>
+
+        <div class="status-update">
+            <p><h2>Please enter your <b>ProlificID</b> to proceed:</h2></p>
+            <input type="text" id="userID" placeholder="Enter your ProlificID here...">
+            <button onclick="getUserData()">Update My Status</button>
+            <div class="questionnaire" id="questionnaireArea"></div>
+
+            <div id="progressArea" style="display: none">
+                <h2>Study Progress:</h2>
+                <table class="progress-table">
+                    <tr>
+                        <th></th>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                    </tr>
+                    <tr>
+                        <td><b>Morning</b><br>(open: 7 am - 12 pm)</td>
+                        <td id="cell_0">Waiting</td>
+                        <td id="cell_2"></td>
+                        <td id="cell_4"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Evening</b><br>(open: 4 pm - 9 pm)</td>
+                        <td id="cell_1"></td>
+                        <td id="cell_3"></td>
+                        <td id="cell_5"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="timer" id="timerArea"></div>
+
+        <div id="infoArea" style="display: block;">
+            <button id="toggleButton" onclick="toggleInfoArea()">Hide Information</button>
+            <div class="info" style="display: block;">
+                <p><strong>&gt; Important:</strong></p>
+                <ul>
+                    <li>Enter your ProlificID and click "Update My Status" to check your progress and get the next questionnaire.</li>
+                    <li><strong>No automatic reminders</strong> will be sent. You need to check back during the time slots yourself.</li>
+                    <li>Questionnaires are only available at specific times, so make sure you access them during those slots.</li>
+                    <li>The study lasts for three consecutive days. Be sure to complete it daily.</li>
+                    <li>The <strong>first questionnaire</strong> can only be done in the <strong>morning</strong>.</li>
+                </ul>
+                
+                <p>If you have questions, contact <a href="mailto:pascal.jansen@uni-ulm.de">Pascal Jansen</a>.</p>
+            
+                <p><strong>&gt; Checklist before starting:</strong></p>
+                <ol>
+                    <li>Ensure you're in a quiet, well-lit place where you won't be disturbed.</li>
+                    <li>Use a computer or laptop with a stable internet connection.</li>
+                    <li>Your screen must be at least <strong>20 inches</strong> with a resolution of <strong>1920x1080 or higher</strong>. Ensure your speakers are on.</li>
+                    <li>Only <strong><u>one webcam</u> should be connected</strong>. If you're using a laptop, unplug any external webcams. You must enable webcam access to qualify for payment.</li>
+                    <li>Make sure your browser window is <strong>maximized</strong> when answering the questionnaire.</li>
+                </ol>
+
+                <p><strong>&gt; Troubleshooting:</strong></p>
+                <ul>
+                    <li>If you are stuck after the calibration (the ‘Next’ button does not appear), try zooming out so the interface becomes smaller in your browser. To zoom out on Windows, press Ctrl and - (minus) on your keyboard. Repeat until the interface fits properly, and the ‘Next’ button is visible.</li>  
+                </ul>
+            
+                <p><strong>&gt; What is the task?</strong></p>
+                <p>Over <strong>THREE days</strong>, you’ll watch daily videos of automated vehicles during 8-minute morning and evening drives.</p>
+            
+                <p>The task requires your participation <strong>twice a day:</strong></p>
+                <ul>
+                    <li>Once in the <strong>morning</strong>, between <strong>7 am and 12 pm</strong></li>
+                    <li>Once in the <strong>evening</strong>, between <strong>4 pm and 9 pm</strong></li>
+                </ul>
+            
+                <p>These times follow <strong>your local timezone</strong>. You’ll answer a questionnaire each time, totaling six across the study.</p>
+            
+                <p><strong>Each questionnaire</strong> takes about <strong>13 minutes</strong> to complete. After finishing, you’ll get a link to return to this page, which will track your progress.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
