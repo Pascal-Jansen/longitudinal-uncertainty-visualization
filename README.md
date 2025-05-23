@@ -1,5 +1,5 @@
 # Longitudinal Effects of Visualizing Uncertainty of Situation Detection and Prediction of Automated Vehicles on User Perceptions
-Journal Paper at [HRI '25](https://humanrobotinteraction.org/2025/), doi: [10.5555/3721488.3721610](https://dl.acm.org/doi/10.5555/3721488.3721610)
+Journal Paper at [Transportation Research Part F](https://www.sciencedirect.com/journal/transportation-research-part-f-traffic-psychology-and-behaviour), doi: [10.1016/j.trf.2025.05.013](https://doi.org/10.1016/j.trf.2025.05.013)
 
 
 
