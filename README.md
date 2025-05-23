@@ -4,7 +4,7 @@ Journal Paper at [HRI '25](https://humanrobotinteraction.org/2025/), doi: [10.55
 
 
  [Pascal Jansen*](https://scholar.google.de/citations?user=cR1_0-EAAAAJ&hl=en), [Mark Colley*](https://scholar.google.de/citations?user=Kt5I7wYAAAAJ&hl=de&oi=ao), [Max Rädler*](https://scholar.google.com/citations?user=HmSPxPsAAAAJ&hl=en), Jonas Schwedler, [Enrico Rukzio](https://scholar.google.de/citations?user=LEu4D5gAAAAJ&hl=de&oi=ao)
-* Joint First Authors
+*Joint First Authors
 
 
 This repository contains the source code for the longitudinal study website.
